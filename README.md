@@ -1,11 +1,12 @@
-# prolog
+# PROLOG
+
+_PROgrammation en LOGique_
 
 ## El acertijo de Einstein
 
 El acertijo "de Einstein" 😕 (_Einstein's Riddle or Zebra Puzzle_) me sirve como ejemplo de problema para programación lógica en PROLOG, aunque es más entretenido resolverlo con lápiz y papel.
 
-Enunciado:
-
+Enunciado:  
 En una calle hay cinco casas, cada una de un color distinto. En cada casa vive una persona de distinta nacionalidad. Cada dueño bebe un único tipo de bebida, fuma una sola marca de cigarrillos y tiene una mascota diferente a sus vecinos. A partir de las 15 pistas presentadas a continuación, la pregunta que hay que responder es: ¿quién es el dueño del pez?
 
 1. El británico vive en la casa roja.
@@ -37,7 +38,8 @@ For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 ?- consult(acertijo).
-Solución: El aleman tiene como mascota pez.
+Solución: El aleman tiene como mascota: pez.
+
 Casas: [amarilla,azul,roja,verde,blanca]
 Nacionalidades: [noruego,danes,britanico,aleman,sueco]
 Mascotas: [gato,caballo,pajaros,pez,perro]

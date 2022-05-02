@@ -1,5 +1,7 @@
 % El acertijo de Einstein
 
+casas(C):-
+    permutation([roja, verde, blanca, amarilla, azul], C).
 nacionalidades(N):-
     permutation([britanico, sueco, danes, noruego, aleman], N).
 mascotas(M):-
@@ -8,8 +10,6 @@ toman(T):-
     permutation([te, cafe, leche, agua, cerveza], T).
 fuman(F):-
     permutation([prince, dunhill, blends, bluemaster, pall_mall], F).
-casas(C):-
-    permutation([roja, verde, blanca, amarilla, azul], C).
 
 % 1. El británico vive en la casa roja
 regla1(C, N):-
@@ -32,12 +32,12 @@ regla3(N, T):-
     nth1(X, N, danes),
     nth1(X, T, te).
 
-	% 4. El noruego vive en la primera casa
+% 4. El noruego vive en la primera casa
 regla4(N):-
     nacionalidades(N),
     nth1(1, N, noruego).
 
-	% 5. El alemán fuma Prince
+% 5. El alemán fuma Prince
 regla5(N, F):-
     nacionalidades(N),
     fuman(F),
@@ -147,7 +147,7 @@ pregunta(Nacionalidad, Mascota):-
     regla7(C, T),
     regla13(F, T),
     regla14(F, T),
-    writef('Solución: El %w tiene como mascota %w.\n', [Nacionalidad, Mascota]),
+    writef('Solución: El %w tiene como mascota: %w.\n\n', [Nacionalidad, Mascota]),
     writef('Casas: %q\nNacionalidades: %q\nMascotas: %q\nToman: %q\nFuman: %q\n\n', [C, N, M, T, F]).
 
 % ¿Qué vecino vive con un pez?

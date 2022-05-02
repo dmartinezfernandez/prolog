@@ -2,7 +2,7 @@
 
 ## El acertijo de Einstein
 
-El acertijo "de Einstein" &#x1F615 (_Einstein's Riddle or Zebra Puzzle_) me sirve como ejemplo de problema para programación lógica en PROLOG, aunque es más entretenido resolverlo con lápiz y papel.
+El acertijo "de Einstein" 😕 (_Einstein's Riddle or Zebra Puzzle_) me sirve como ejemplo de problema para programación lógica en PROLOG, aunque es más entretenido resolverlo con lápiz y papel.
 
 Enunciado:
 
